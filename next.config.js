@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  images: {
+    domains: ["picsum.photos"], // Add picsum.photos to the allowed image domains
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

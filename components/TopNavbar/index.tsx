@@ -29,7 +29,6 @@ const TopNavBar = () => {
             height={165}
             src="/profilepic.jpg"
             alt="Profile"
-            objectFit="cover"
             className="h-8 w-8 rounded-full border border-gray-300"
           />
         </div>

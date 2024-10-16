@@ -1,4 +1,5 @@
 import { formatDateRange } from "../../lib/utils";
+import Image from 'next/image'
 
 interface EventCardProps {
   title: string;
@@ -13,7 +14,9 @@ interface EventCardProps {
 const EventCard: React.FC<EventCardProps> = ({ title, data, eventID }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-      <img
+      <Image
+        width={400}
+        height={300}
         src={`https://picsum.photos/seed/${eventID}/400/300`}
         alt={title}
         className="w-full h-48 object-cover"
